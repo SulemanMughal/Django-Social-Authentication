@@ -1,109 +1,156 @@
 # Django Social Authentication: Login with Google
 
-A Django-based application demonstrating how to implement Google OAuth2 authentication, allowing users to sign in and sign out using their Google accounts.
+![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
+![Google OAuth2](https://img.shields.io/badge/Google%20OAuth2-4285F4?logo=google&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Open Source](https://img.shields.io/badge/Open%20Source-✔️-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey) <!-- Add your license if available -->
 
-## Objectives
+> **Seamless, secure, and modern authentication for Django web apps using Google OAuth2.**
 
-By the end of this project, you'll be able to:
+---
 
-* Integrate Google OAuth2 authentication into a Django application.
-* Allow users to sign in and sign out using their Google accounts.
-* Handle user sessions securely and efficiently.([Python in Plain English][1], [GitHub][2])
+## 🚀 Taglines
 
-## Technologies Used
+- **"Sign In. Securely. Socially."**
+- **"Modern authentication for modern Django apps."**
 
-* **Backend**:
+---
 
-  * ![Django](https://img.shields.io/badge/Django-092E20?logo=django\&logoColor=white) **Django**: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
-  * ![Python Social Auth](https://img.shields.io/badge/Python%20Social%20Auth-000000?logo=python\&logoColor=white) **Python Social Auth**: A social authentication/registration mechanism with support for several frameworks and auth providers.([GitHub][3])
+## ✨ Features
 
-* **Frontend**:
+- **Google OAuth2 Authentication**: Users can sign in using their Google accounts.
+- **Session Management**: Secure handling of user sessions.
+- **User Profile**: Displays basic user information fetched from Google.
+- **Minimalistic Frontend**: Clean, responsive pages using Bootstrap, HTML5, and CSS3.
 
-  * ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5\&logoColor=white) **HTML5**: For structuring the login and home pages.
-  * ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3\&logoColor=white) **CSS3**: For styling the pages.
+---
 
-## Features
+## 🎯 Objectives
 
-* **Google OAuth2 Authentication**: Users can sign in using their Google accounts.
-* **Session Management**: Secure handling of user sessions.
-* **User Profile**: Displays basic user information fetched from Google.([Python in Plain English][1], [GitHub][4])
+- Integrate Google OAuth2 authentication into a Django application.
+- Allow users to sign in and sign out using their Google accounts.
+- Handle user sessions securely and efficiently.
 
-## Applications
+---
 
-This integration is ideal for:
+## 🛠️ Technologies Used
 
-* **Web Applications**: Allowing users to sign in using their existing Google accounts.
-* **SaaS Platforms**: Simplifying the registration and login process for users.
-* **Internal Tools**: Providing easy access for users within an organization.([Medium][5])
+- ![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white) **Django**: High-level Python web framework.
+- ![Python Social Auth](https://img.shields.io/badge/Python%20Social%20Auth-000000?logo=python&logoColor=white) **Python Social Auth**: Flexible social authentication for Django.
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) **HTML5**: Markup for login and home pages.
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) **CSS3**: Modern page styling.
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white) **Bootstrap**: Responsive design.
 
-## Future Enhancements
+---
 
-To further enhance this project, consider implementing the following features:
+## 🏷️ Tags
 
-* **Additional Social Authentication**: Integrate other social authentication providers like Facebook, GitHub, or LinkedIn.
-* **User Profile Management**: Allow users to update their profile information.
-* **Email Verification**: Implement email verification for added security.
-* **Password Reset Functionality**: Provide users with the ability to reset their passwords.
-* **Admin Dashboard**: Create an admin interface to manage users and sessions.([Codeloop][6], [GitHub][7])
+`django` `authentication` `social-auth` `google-oauth2` `python` `login` `webapp`
 
-## Installation
+---
 
-To set up the project on your local machine, follow these steps:
+## 💡 Applications
 
-1. **Clone the repository**:
+- **Web Applications**: Let users sign in with Google.
+- **SaaS Platforms**: Simplify registration and login.
+- **Internal Tools**: Easy access for organization members.
 
-   ```bash
-   git clone https://github.com/SulemanMughal/Django-Social-Authentication.git
-   cd Django-Social-Authentication
-   ```
+---
 
-2. **Create and activate a virtual environment**:
+## 🧩 Future Enhancements
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
+- Add more social authentication providers (Facebook, GitHub, LinkedIn, etc.).
+- User profile management and editing.
+- Email verification and password reset.
+- Admin dashboard for user/session management.
 
-3. **Install the project dependencies**:
+---
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 📦 Installation
 
-4. **Configure Google OAuth2 credentials**:
+Follow these steps to set up the project locally:
 
-   * Sign up for a Google Developer account at [https://console.developers.google.com/](https://console.developers.google.com/).
-   * Create a new project and enable the "Google+ API".
-   * Create OAuth 2.0 credentials and obtain your `CLIENT_ID` and `CLIENT_SECRET`.
-   * Add your credentials to the Django settings file (`settings.py`):
+1. **Clone the repository:**
 
-     ```python
-     SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'your-client-id'
-     SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'your-client-secret'
-     ```
+    ```bash
+    git clone https://github.com/SulemanMughal/Django-Social-Authentication.git
+    cd Django-Social-Authentication
+    ```
 
-5. **Apply database migrations**:
+2. **Create and activate a virtual environment:**
 
-   ```bash
-   python manage.py migrate
-   ```
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
 
-6. **Create a superuser** (to access the Django admin panel):
+3. **Install dependencies:**
 
-   ```bash
-   python manage.py createsuperuser
-   ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-7. **Run the development server**:
+4. **Configure Google OAuth2 credentials:**
+    - Visit [Google Developer Console](https://console.developers.google.com/).
+    - Create a new project, enable "Google+ API".
+    - Create OAuth 2.0 credentials, get your `CLIENT_ID` and `CLIENT_SECRET`.
+    - Add these to your `settings.py`:
 
-   ```bash
-   python manage.py runserver
-   ```
+      ```python
+      SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'your-client-id'
+      SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'your-client-secret'
+      ```
 
-8. **Access the application**:
-   Open a browser and go to `http://127.0.0.1:8000/`.
+5. **Run migrations:**
 
-## Contributing
+    ```bash
+    python manage.py migrate
+    ```
 
-Contributions are welcome! If you would like to contribute to this project, feel free to fork the repository, make your changes, and submit a pull request.
+6. **Create a superuser:**
 
+    ```bash
+    python manage.py createsuperuser
+    ```
+
+7. **Start the development server:**
+
+    ```bash
+    python manage.py runserver
+    ```
+
+8. **Access the app:**  
+   Visit `http://127.0.0.1:8000/`.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
+
+---
+
+## 🔗 Useful Links
+
+- [Django Documentation](https://docs.djangoproject.com/)
+- [Python Social Auth Docs](https://python-social-auth.readthedocs.io/en/latest/)
+- [Google OAuth2 Guide](https://developers.google.com/identity/protocols/oauth2)
+
+---
+
+## 🧑 Author
+
+- [Suleman Mughal](https://github.com/SulemanMughal)
+
+---
+
+## ⭐ Show your support
+
+Give a ⭐️ if you found this project useful!
+
+---
+
+<!-- You can add a project logo or banner here if available. -->
